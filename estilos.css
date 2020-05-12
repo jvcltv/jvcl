@@ -16,6 +16,9 @@ body {background-image: url(https://canalcienciascriminais.com.br/wp-content/upl
     
     .menu li {
       list-style: none
+      background: gold;
+  border: ridge gold;
+  border-radius: 13em/3em; 
     }
     a {
       color: green;
@@ -34,5 +37,3 @@ body {background-image: url(https://canalcienciascriminais.com.br/wp-content/upl
     .site-subtitle {
       font-style: italic;
     }
-    
-    
