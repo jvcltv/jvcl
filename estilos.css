@@ -1,8 +1,13 @@
-body {background-image: url(https://images.freeimages.com/images/large-previews/d67/free-background-green-yellow-1639359.jpg);
+body {background-image: url(https://canalcienciascriminais.com.br/wp-content/uploads/2019/05/cinema.png);
     font-family: arial black;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    b
     }
     .menu {
-     background-color:yellow;
+     background-color:none;
      }
     .menu ul {
       display: flex;
@@ -12,7 +17,6 @@ body {background-image: url(https://images.freeimages.com/images/large-previews/
     .menu li {
       list-style: none
     }
-    
     a {
       color: green;
       text-decoration: none;
@@ -25,8 +29,10 @@ body {background-image: url(https://images.freeimages.com/images/large-previews/
     .site-title {
       color: white;
       text-align: center;
+      text-shadow:0 0 10px black;
     }
     .site-subtitle {
       font-style: italic;
     }
+    
     
