@@ -13,6 +13,8 @@ body {background-image: url('../curso/img/cinza.jpg');
     background-repeat: no-repeat;
     background-color: rgb(167, 167, 167);
     text-size-adjust: 45;
+    font-family: 'Pangolin', monospace;
+    font-style: bold;
     }
     /* se a tela tiver pelo menos 400px vai carregar este estilos */
     @media (min-width: 400px) {
@@ -59,10 +61,16 @@ body {background-image: url('../curso/img/cinza.jpg');
     }
     .site-subtitle {
       font-style: italic,bold;
+      font-family: 'Press Start 2P', cursive;
+      line-height: 1.8em;
+    }
+    .site-title {
+      font-size: 10ex;
+      font-family: 'Teko', sans-serif;
     }
     .img-portfolio {
       weight: 180px;
-      width: 180px;
+      width: 240px;
     }
 }
 .img-portfolio {
@@ -70,8 +78,21 @@ body {background-image: url('../curso/img/cinza.jpg');
 }
 .site-subtitle2 {
   font-style: italic
+  font-style: 'Teko', sans-serif;
+  line-height: 1.8em;
 }
-.containerFlex {
-  display: flex;
-  justify-content: space-around;
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.8em;
+  padding: 1.5em;
+  text-align: center;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+      align-items: center;
+  }
+  .portfolio figure{
+    text-align: center;
   }
