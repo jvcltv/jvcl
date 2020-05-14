@@ -17,26 +17,20 @@ body{
     font-style: bold;
     }
     /* se a tela tiver pelo menos 200px vai carregar este estilos */
-    @media (min-width: 200px) {
-
-    }
-    header {
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    @media (min-width: 200px)
+      .menu {
+      }
     .menu {
-     background-color: rgb(255, 255, 0);
-     position: fixed;
-     width: 100vw;
-     top: 0;
-     }
+        background-color: rgb(255, 255, 0);
+        position: fixed;
+        width: 100vw;
+        top: 0;
+    }
     .menu ul {
       display: flex;
       justify-content: space-around;
       background-color: rgba(255, 255, 122, 0);
-      list-style:none ;
+      list-style:none ; 
     }
 .menu a {
   background-color: rgb(255, 255, 0);
@@ -44,6 +38,7 @@ body{
   height:100px;
   border-radius: 10px 20px 30px 40px;
   padding: 10px;
+
 }
     a {
       color: #4e7aa5;
@@ -56,8 +51,11 @@ body{
     .site-subtitle,
     .site-title,.site-subtitle2 {
       color: rgb(0, 0, 0);
+      display: flex;
       text-align: center;
       text-shadow:0 0 10px black;
+      justify-content: center;
+      align-items: center;
     }
     .site-subtitle {
       font-style: italic,bold;
@@ -108,3 +106,21 @@ body{
       padding: 1.5em;
       justify-content: center;
     }
+    /* o código a seguir acabei colando, pois não estava conseguindo fazer por conta propria*/
+    .zoom {
+      overflow: visible;
+    }
+    
+    .zoom img {
+      max-width: 100%;
+      -moz-transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    
+    .zoom:hover img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    
