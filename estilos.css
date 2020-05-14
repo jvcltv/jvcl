@@ -91,7 +91,7 @@ body{
     text-align: center;
   }
 
-@media (min-width: 560px) {
+@media (min-width: 600px) {
   .portfolio .grid {
     display: grid;
     gap: 2em;
@@ -123,4 +123,14 @@ body{
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-    
+    .menu a:hover {
+      color:white;
+      background-color:rgb(255, 187, 0);
+      text-decoration: underline;
+  }
+  @media (min-width: 320px) {
+    .menu .grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;}
+  }
