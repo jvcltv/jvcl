@@ -9,21 +9,22 @@
 body{
     font-family: arial black;
     background-attachment: fixed;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: auto 100vh;
     background-color: rgb(167, 167, 167);
     text-size-adjust: 45;
     font-family: 'Pangolin', monospace;
     font-style: bold;
     }
+    .header {
+      height: 100vh;
+      display: flex;
+    }
     /* se a tela tiver pelo menos 200px vai carregar este estilos */
-    @media (min-width: 200px)
-      .menu {
-      }
+
     .menu {
         background-color: rgb(255, 255, 0);
         position: fixed;
-        width: 100vw;
+        width: 120vw;
         top: 0;
     }
     .menu ul {
@@ -38,7 +39,6 @@ body{
   height:100px;
   border-radius: 10px 20px 30px 40px;
   padding: 10px;
-
 }
     a {
       color: #4e7aa5;
@@ -52,7 +52,6 @@ body{
     .site-title,.site-subtitle2 {
       color: rgb(0, 0, 0);
       display: flex;
-      text-align: center;
       text-shadow:0 0 10px black;
       justify-content: center;
       align-items: center;
@@ -76,7 +75,7 @@ body{
 .site-subtitle2 {
   font-style: italic
 }
-.portfolio h2 {
+.portfolio h2,.contato h2 {
   font-family: 'Press Start 2P', cursive;
   line-height: 1.8em;
   padding: 1.5em;
@@ -86,6 +85,7 @@ body{
 .portfolio .grid {
   display: grid;
   gap: 2em;
+  min-height: 100vh;
   }
   .portfolio figure{
     text-align: center;
@@ -102,7 +102,7 @@ body{
     .portfolio .grid {
       display: grid;
       gap: 2em;
-      grid-template-columns: repeat(4, 240px);
+      grid-template-columns: repeat(2, 240px);
       padding: 1.5em;
       justify-content: center;
     }
@@ -132,5 +132,9 @@ body{
     .menu .grid {
     display: flex;
     justify-content: space-around;
-    gap: 2em;}
+    gap: 2em;
+  }
+  .contato a {
+    color: whitesmoke; 
+    font-size: 8em;
   }
