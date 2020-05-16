@@ -19,6 +19,21 @@ body{
       height: 100vh;
       display: flex;
     }
+    .titulo {
+    transform: scale(0.2) translateY(50vh);
+      opacity: 0;  
+      animation: linear 2s animacaotitulo forwards;
+    }
+    @keyframes  animacaotitulo {
+     0%{
+     
+     }
+     100%{
+      transform: scale(1) translateY(2vh);
+      opacity: 1;
+     }
+    }
+
     /* se a tela tiver pelo menos 200px vai carregar este estilos */
 
     .menu {
@@ -26,6 +41,7 @@ body{
         position: fixed;
         width: 120vw;
         top: 0;
+        z-index: 1;
     }
     .menu ul {
       display: flex;
@@ -39,6 +55,8 @@ body{
   height:100px;
   border-radius: 10px 20px 30px 40px;
   padding: 10px;
+  transition: 1s;
+
 }
     a {
       color: #4e7aa5;
@@ -68,18 +86,49 @@ body{
     .img-portfolio {
       height: 180px;
       width: 240px;
+      object-position: left bottom;
     }
+
 .img-portfolio {
   color: rgb(8, 8, 8);
 }
 .site-subtitle2 {
   font-style: italic
 }
+
 .portfolio h2,.contato h2 {
   font-family: 'Press Start 2P', cursive;
   line-height: 1.8em;
   padding: 1.5em;
   text-align: center;
+}
+.Sobre {
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.8em;
+  padding: 1.5em;
+  text-indent: 2.5em;
+  text-align: justify;
+}
+
+.sobre p {
+  margin-bottom: 2em;
+}
+.titulo a {
+  color: black;
+}
+.Sobre .avatar {
+  float:left;
+  margin-right: 2em ;
+}
+.Sobre .avatar img {
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  border-radius: 25%;
+}
+
+.Sobre {
+  margin-top: 10em;
+text-align: center;
 }
 
 .portfolio .grid {
@@ -110,7 +159,6 @@ body{
     .zoom {
       overflow: visible;
     }
-    
     .zoom img {
       max-width: 100%;
       -moz-transition: all 0.3s;
@@ -138,3 +186,33 @@ body{
     color: whitesmoke; 
     font-size: 8em;
   }
+
+  @media (min-width: 6000px) {
+    .contato .grid {
+      display: grid;
+      gap: 2em;
+      grid-template-columns: repeat (4, 240px);
+      padding: 1.5em;
+    }
+  }
+  .contato .icons {
+    text-align: center;
+  }
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px black;
+    transition: 1s;
+  }
+  @media (min-width: 1200px) {
+    .portfolio h2,.contato h2,.Sobre  {
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1200px;
+      margin-right: auto;
+      margin-left: auto;
+    }
